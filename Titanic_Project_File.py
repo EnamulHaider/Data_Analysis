@@ -2,11 +2,10 @@ import numpy as np
 import pandas as pd
 from pandas import Series, DataFrame
 titanic_df= pd.read_csv("C:/data/train.csv")
-# Age/Sex Distribution 
-import numpy as np
+# Age/Sex Distribution
 import matplotlib.pyplot as plt
 import seaborn as sns
-%matplotlib inline
+
 sns.catplot( 'Sex', data=titanic_df,kind="count")
 sns.catplot('Sex',data=titanic_df, kind='count',hue='Pclass')
 sns.catplot('Pclass',data=titanic_df, kind='count', hue='Sex')
